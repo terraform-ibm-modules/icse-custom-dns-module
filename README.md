@@ -1,6 +1,6 @@
 # IBM Cloud Solution Engineering VPC Custom DNS Module
 
-Create a custom DNS service, zones, records. Users can also optionally create a custom DNS resolver and custom DNS subnets on VPC.
+Create a custom DNS service, zones, records. Users can also optionally create a custom DNS resolvers and custom DNS subnets on VPC.
 
 ---
 
