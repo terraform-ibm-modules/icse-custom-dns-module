@@ -6,12 +6,15 @@ Create a custom DNS service, zones, records. Users can also optionally create a 
 
 ## Table of Contents
 
-1. [DNS Service](#dns-service)
-2. [DNS Zones](#dns-zones)
-3. [DNS Records](#dns-records)
-4. [Custom Resolvers](#custom-resolvers)
-5. [Module Variables](#module-variables)
-6. [Module Outputs](#module-outputs)
+- [IBM Cloud Solution Engineering VPC Custom DNS Module](#ibm-cloud-solution-engineering-vpc-custom-dns-module)
+  - [Table of Contents](#table-of-contents)
+  - [DNS Service](#dns-service)
+  - [DNS Zones](#dns-zones)
+  - [DNS Records](#dns-records)
+  - [Custom Resolvers](#custom-resolvers)
+    - [Custom Resolver Variable](#custom-resolver-variable)
+  - [Module Variables](#module-variables)
+  - [Module Outputs](#module-outputs)
 
 ---
 
@@ -121,7 +124,7 @@ variable "custom_resolvers" {
 
 Name                   | Type                                                                                                                                                                                                                                                                                                                                                                             | Description                                                                                                                                                                                                                             | Sensitive | Default
 ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | -------
-TF_VERSION             | string                                                                                                                                                                                                                                                                                                                                                                           | The version of the Terraform engine that's used in the Schematics workspace.                                                                                                                                                            |           | 1.0
+TF_VERSION             | string                                                                                                                                                                                                                                                                                                                                                                           | The version of the Terraform engine that's used in the Schematics workspace.                                                                                                                                                            |           | 1.3.0
 prefix                 | string                                                                                                                                                                                                                                                                                                                                                                           | A unique identifier for resources. Must begin with a lowercase letter and end with a lowerccase letter or number. This prefix will be prepended to any resources provisioned by this template. Prefixes must be 16 or fewer characters. |           | 
 region                 | string                                                                                                                                                                                                                                                                                                                                                                           | Region where DNS components will be provisioned To find your VPC region, use `ibmcloud is regions` command to find available regions.                                                                                                   |           | 
 resource_group_id      | string                                                                                                                                                                                                                                                                                                                                                                           | ID of the resource group where DNS components will be provisioned                                                                                                                                                                       |           | null

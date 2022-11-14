@@ -3,7 +3,7 @@
 ##############################################################################
 
 variable "TF_VERSION" {
-  default     = "1.0"
+  default     = "1.3.0"
   type        = string
   description = "The version of the Terraform engine that's used in the Schematics workspace."
 }
